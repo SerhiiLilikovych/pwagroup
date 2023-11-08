@@ -1,0 +1,18 @@
+{
+    "name": "livich/pwa",
+    "description": "Clone of pwa.group PWA landing",
+    "type": "project",
+    "require": {
+        "altorouter/altorouter": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Livich\\Pwa\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Livich"
+        }
+    ]
+}
