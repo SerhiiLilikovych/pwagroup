@@ -74,7 +74,7 @@
    ],
    "generated":"",
    "manifest_package":"org.chromium.webapk.QMfj34BfF2pj",
-   "scope_url":"http://localhost",
+   "scope_url":"<?=$SCOPE_SCHEME.'://'.$DOMAIN_NAME?>",
    "intent_filters":{
       "scope_url_scheme":"<?=$SCOPE_SCHEME?>",
       "scope_url_host":"<?=$DOMAIN_NAME?>",

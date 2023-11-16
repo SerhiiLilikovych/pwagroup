@@ -4,7 +4,7 @@ error_reporting(E_ALL);
 
 require 'vendor/autoload.php';
 
-function unparseUrl($parsed_url) {
+function unparse_url($parsed_url) {
   $scheme   = isset($parsed_url['scheme']) ? $parsed_url['scheme'] . '://' : '';
   $host     = isset($parsed_url['host']) ? $parsed_url['host'] : '';
   $port     = isset($parsed_url['port']) ? ':' . $parsed_url['port'] : '';
@@ -30,13 +30,11 @@ $router = new AltoRouter();
 
 $router->map('GET', '/', function() {
     require 'config.php';
-
-    if(isset($_GET['pwauid']) && isset($_GET['pwadm'])){
-      $targetUrl = appendQueryParams($TARGET_URL, $_GET);
-      header('Location: '.$targetUrl, true, 302);
-      exit;
+    if(isset($_GET['pwauid']) && isset($_GET['os_user_id'])){
+        $myOfferUrl = appendQueryParams($OFFER_URL, $_GET);
+        header('Location: '.$myOfferUrl, true, 302);
+        exit;
     }
-
     include('./templates/index.php');
 });
 

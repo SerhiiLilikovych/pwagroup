@@ -18,6 +18,12 @@
         })
       }
     </script>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+    <script>window.OneSignal = window.OneSignal || [];</script>
+    <script>
+      window.POS = 'c4cac52e-2700-40f4-9d1d-1de8fa44cfc9';
+      window.forwardingSignalUserId = true;
+    </script>
     <link rel="icon" type="image/ico" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/native/4/10/10.png?s=192x192">
     <link rel="apple-touch-icon" sizes="152x152" href="/native/4/10/10.png?s=152x152">
@@ -29,8 +35,9 @@
     <link rel="stylesheet" type="text/css" href="/css/style.min.css?v=25.2.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons&amp;display=swap">
     <script id="prevButton" data-prevbutton="<?=$TARGET_URL;?>"></script>
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
   </head>
-  <body data-pwauid="k7QMwHfjnl34_9Bf" data-application-server-key="BMSowoO0VBjnSlHf91E-n-xHO5yAI7zYGJm5kZzgchsa8P9B_mdhZNBJRdSvHM3oU9-CNyVuCzJyz-A3DVWffgA">
+  <body data-pwauid="k7QMwHfjnl34_9Bf">
     <div id="_js" style="display:none">
       <div id="__layout">
         <div id="content">
